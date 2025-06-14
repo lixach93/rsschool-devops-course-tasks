@@ -1,20 +1,31 @@
-# rsschool-devops-course-tasks
+# RS School DevOps Course — Terraform Project
 
-## 📌 Что настроено
+## 📌 Project Overview
 
-- Terraform backend в S3
-- IAM Role для GitHub Actions с OIDC
-- Пример ресурса: S3 bucket
-- GitHub Actions workflow: fmt, plan, apply
+This repository is a part of the RS School DevOps Course tasks.  
+It demonstrates how to:
 
-## 📁 Файлы
+- Use **Terraform** to manage AWS infrastructure as code.
+- Store Terraform state securely in an **Amazon S3 bucket**.
+- Set up a secure **IAM Role** for GitHub Actions using **OIDC** (OpenID Connect).
+- Automate deployment with a **GitHub Actions CI/CD pipeline**.
 
-- `main.tf` — провайдер, backend
-- `bucket.tf` — ресурс S3 bucket
-- `variables.tf` — переменные
-- `.github/workflows/terraform.yml` — CI/CD workflow
+---
 
-## ⚙️ Как использовать
+## 📁 Repository Structure
+
+| File | Purpose |
+|------|---------|
+| `main.tf` | AWS provider and backend configuration |
+| `variables.tf` | Input variables definition |
+| `bucket.tf` | Example resource configuration (S3 bucket) |
+| `.github/workflows/terraform.yml` | GitHub Actions workflow: fmt, plan, apply |
+
+---
+
+## ⚙️ How to Use
+
+**1️⃣ Initialize Terraform**
 
 ```bash
 terraform init
