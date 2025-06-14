@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket = "rsschool-devops-course-terraform-state"
     key    = "global/s3/terraform.tfstate"
-    region = var.region
+    region = "eu-central-1"
   }
 }
 
